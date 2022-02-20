@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+body,html{
+    height: 100%;
+    background-color: #f6f8fa;
+}
+
+.main{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.a-item{
+    align-items: center;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.bx{
+    color:#d5d7dd;
+}
+
+/* Header Section  */
+
+header{
+    flex: 0 0 70px;
+    border: 1px solid #d5d7dd;
+    padding: 0px 40px;
+    justify-content: space-between;
+    color: #828b9d;
+}
+
+.logo{
+    font-size: 1.5rem;
+}
+
+.logo p{
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.top-menu{
+    list-style: none;
+}
+
+.top-links{
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.bar{
+    border: none;
+    padding: 0 10px;
+    width: 200px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+.account p{
+    margin: 0 10px;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.account p .bx{
+    font-size: 1.25rem;
+}
+
+section{
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+/* Aside Section  */
+
+aside{
+    width: 300px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.menu{
+    list-style: none;
+    margin: 50px 50px 100px 50px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+}
+
+.links{
+    color: #9fa4b5;
+    padding: 10px;
+    margin: 0 10px;
+    
+    font-size: 0.8rem;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.links .bx{
+    margin: 0px 20px 0 0;
+    transform: scale(1.7,1.7);
+}
+
+.links:hover{
+    color: black;
+    background-color: #f6f8fa;
+}
+
+/* Content Section  */
+.content{
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 50px 70px;
+    overflow: hidden;
+}
+
+.content-top{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-2 p{
+    margin: 0 10px;
+    color: #9fa4b5;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.menu-2 p .bx{
+    margin: 0 30px;
+    transform: scale(1.7,1.7);
+}
+
+.sub-head{
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.sub-head h2{
+    color: #636c84;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-mid{
+    list-style: none;
+
+}
+
+.mid{
+    color: #9fa4b5;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+/* Site Section  */
+
+.site{
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.product{
+    flex-wrap: wrap;
+    width: 80%;
+    flex-shrink: 0;
+    border: 1px solid #d5d7dd;
+    overflow: auto;
+    
+}
+
+.card{
+    background-color: white;
+    height: 250px;
+    border-radius: 10px;
+    flex-direction: column;
+    width: 180px;
+    margin: 15px 10px;
+    color: #828b9d;
+    cursor: pointer;
+    padding: 40px 0;
+}
+
+.card p{
+    margin: 10px 0;
+    font-size: 0.8rem;
+}
+
+.card h2{
+    color: #636c84;
+    font-size: 1rem;
+}
+
+.laptop{
+    width: 100px;
+    background-color: white;
+}
+
+.product-title{
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+/* Feature Section  */
+.feature{
+    flex-grow: 1;
+    padding: 0 10px;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.brand{
+    border: 1px solid #d5d7dd;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.heading{
+    flex: 0 0 50px;
+    border-bottom: 1px solid #d5d7dd;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.check{
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.check p{
+    color: #828b9d;
+    width: 50%;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 10px;
+    margin: 15px 0;
+    align-items: center;
+    position: relative;
+}
+
+
+/* Tablet Responsive  */
+
+@media screen and (max-width:820px) {
+
+    section{
+        flex-direction: column;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .content{
+        flex: 0 0 100%;
+    }
+
+    .product{
+        width: 65%;
+    }
+
+    .top-menu{
+        display: none;
+    }
+
+    .menu-mid{
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px)
+{
+    .account{
+        display: none;
+    }
+
+    .menu-2{
+        display: none;
+    }
+
+    .content{
+        padding: 0 20px;
+    }
+
+    .card{
+        width: 120px;
+        height: 150px;
+    }
+
+    .laptop{
+        width: 50px;
+    }
+
+    .product-title{
+        margin-top: 0px;
+        
+    }
+
+    .product-title p{
+        font-size: 0.5rem;
+    }
+
+    .product-title h2{
+        font-size: 0.7rem;
+    }
+
+    .check p{
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .heading{
+        justify-content: center;
+    }
+}

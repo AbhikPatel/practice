@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+body,html{
+    height: 100%;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.a-item{
+    align-items: center;
+}
+
+.j-content{
+    justify-content: center;
+}
+
+.main{
+    background-color: #212121;
+    height: 100%;
+    overflow: auto;
+    flex-direction: column;
+    /* padding: 100px; */
+}
+
+.img{
+    background-image: url(/assets/Images/chocolate.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* .space{
+    height: 500px;
+} */
+
+/* About Section  */
+
+.about{
+    border: 1px solid red;
+    height: 1500px;
+    flex-wrap: wrap;
+}
+
+.col{
+    flex-direction: column;
+    border: 1px solid blue;
+    width: 33.33%;
+}
+
+.box{
+    height: 50%;
+    border: 3px solid green;
+    padding: 70px;
+}
+
+.card{
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media (max-width:800px)
+{
+
+    .about p{
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    .col{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .box{
+        height: 100%;
+        width: 50%;
+        padding: 0;
+    }
+
+}

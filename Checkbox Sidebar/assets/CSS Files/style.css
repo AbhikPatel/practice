@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+body,html{
+    height: 100%;
+}
+
+.wrapper{
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+label{
+    position: absolute;
+    font-size: 2.25rem;
+    color: black;
+    left: 10px;
+    z-index: 999;
+    top: 5px;
+}
+
+/* Aside Section  */
+aside{
+    flex: 0 0 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    padding-top: 50px;
+    transition: 0.6s all;
+    overflow: hidden;
+    position: relative;
+    z-index: 99;
+}
+
+h1{
+    position: absolute;
+    left: 60px;
+    transition: 0.6s all;
+    white-space: nowrap;
+}
+
+ul{
+    /* height: 100%; */
+    flex-grow: 1;
+    margin-top: 50px;
+    list-style: none;
+}
+
+li{
+    display: flex;
+}
+
+a{
+    border: 3px solid #0064d2;
+    flex-grow: 1;
+    padding: 0 10px;
+    height: 35px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    margin: 5px 3px;
+    border-radius: 15px;
+}
+
+ul li a span{
+    position: absolute;
+    left: 40px;
+    white-space: nowrap;
+    transition: 0.6s all;
+}
+
+ul li a .bx{
+ font-size: 1.25rem;
+}
+
+/* Section section  */
+section{
+    flex-grow: 1;
+    padding: 50px;
+    color: white;
+    background-color: #0064d2;
+    position: relative;
+}
+
+#lol{
+    display: none;
+}
+
+#lol:checked ~ aside{
+    flex: 0 0 50px;
+}
+
+#lol:checked ~ aside ul li a span, #lol:checked ~ aside h1{
+    transform: translateX(250px);
+}
+
