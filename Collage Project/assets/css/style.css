@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+}
+
+.wrapper{
+  border: 3px solid red;
+  padding: 30px;
+  height: 100%;
+  display: flex;
+}
+
+.form{
+  width: 50%;
+  border: 3px solid black;
+}
+
+.photo{
+  width: 50%;
+}
+
+.photo2{
+  border: 3px solid black;
+  height: 100%;
+  /* width: 100%; */
+  background: linear-gradient(#05c5ff73, #1500ff4f), url('/assets/images/Login\ page\ image.png');
+  background-position: right;
+  /* background-attachment: fixed; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
